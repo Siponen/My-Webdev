@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-2 game-bar" style="padding:0; margin-right:0;">
+        <p class="game-bar-header">Our Games</p>
+        <div class="game-content">
+            <partial name="_Games" />
+        </div>
+    </div>
+    <div class="col-md-7">
+        <p class="blog-bar-header">Dev blog</p>
+        <div class="blog-content">
+            <partial name="_DevBlog" />
+        </div>
+    </div>
+</div>

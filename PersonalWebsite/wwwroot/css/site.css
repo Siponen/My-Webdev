@@ -1,0 +1,132 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+
+body {
+    padding-bottom: 20px;
+    background-color:rgb(22, 31, 36);
+    color:white;
+}
+
+#banner {
+    background: url("../images/graph.png");
+    min-height: 300px;
+    margin-bottom: 0;
+}
+
+#title {
+    min-height: 300px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#my-navbar {
+    background: rgba(0, 0, 0,0.2);
+}
+    #my-navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #my-navbar li {
+        display: inline;
+    }
+
+        #my-navbar li a {
+            display: inline-block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+            #my-navbar li a:hover {
+                background:rgba(0, 0, 0,0.4);
+            }
+
+#gamer {
+    background: url("../images/gamer-bg.jpg");
+}
+
+#sommar {
+    background: url("../images/stockholm-sommar.jpeg");
+    max-height: 250px;
+    color: white;
+}
+
+#vår {
+    background: url("../images/Stockholm-vår.jpg");
+    max-height: 250px;
+    color: white;
+}
+
+#höst {
+    background: url("../images/stockholm-höst.JPG");
+    max-height: 250px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#vinter {
+    background: url("../images/stockholm-vinter.jpg");
+    max-height: 250px;
+    color: white;
+}
+
+.text-box-left {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    text-align: left;
+}
+
+.text-box-right {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    text-align: right;
+}
+
+.title {
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
