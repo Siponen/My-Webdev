@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolundGameStudioWebsite", "VolundGameStudioWebsite\VolundGameStudioWebsite.csproj", "{A3351ED7-B10A-4705-B742-3FCD3CF66FAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebsite", "PersonalWebsite\PersonalWebsite.csproj", "{42D0C2C1-6BFD-49F1-B501-373A20D57E37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalWebsite", "PersonalWebsite\PersonalWebsite.csproj", "{42D0C2C1-6BFD-49F1-B501-373A20D57E37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolundReactRedux", "..\..\volund-app\VolundReactRedux\VolundReactRedux.csproj", "{FCC0F666-7753-467A-9F1F-B875A5A474CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{42D0C2C1-6BFD-49F1-B501-373A20D57E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D0C2C1-6BFD-49F1-B501-373A20D57E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D0C2C1-6BFD-49F1-B501-373A20D57E37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC0F666-7753-467A-9F1F-B875A5A474CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC0F666-7753-467A-9F1F-B875A5A474CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC0F666-7753-467A-9F1F-B875A5A474CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC0F666-7753-467A-9F1F-B875A5A474CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
