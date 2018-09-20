@@ -1,0 +1,53 @@
+﻿.gameItem
+{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.gameNewItem{
+    width:250px;
+    height:300px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    object-fit:fill;
+}
+
+.gameContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.gameTitle {
+    font-size: 18px;
+    color: #ffffff;
+    background: rgba(100,31,73,0.8);
+}
+
+.gameCover {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto; /* These two are added only for clarity, */
+    height: auto; /* as the default is auto anyway */
+}
+
+.gameYear {
+    color: #ffffff;
+    background: rgba(100,31,73,0.8);
+}
+
+.gameGenre {
+    text-align:right;
+}
+
+.gameItem
+{
+    min-height:300px;
+    background-repeat: no-repeat;
+}
+
+.gameText{
+    font-size:18px;
+    background-color: #0094ff;
+}
