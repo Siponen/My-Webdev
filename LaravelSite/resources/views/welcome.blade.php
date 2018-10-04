@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>GD - Den of Coding</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -67,6 +67,10 @@
                 text-transform: uppercase;
             }
 
+            .links > a:hover {
+                text-decoration:underline;
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -93,9 +97,11 @@
                 <div class="title m-b-md">
                     Den of Coding
                 </div>
-
+            
                 <div class="links">
-                    <a href="https://laravel-news.com">Game design</a>
+                    <a href="#">Skills</a>
+                    <a href="">Backend projects</a>
+                    <a href="">Frontend portfolio</a>
                     <a href="https://github.com/Siponen">GitHub</a>
                 </div>
             </div>
