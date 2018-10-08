@@ -36,7 +36,19 @@ class SkillController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Retrieve the validated input data...
+        $validated = $request->validated();
+        $skill->title = $validated["title"];
+        $skill->rating = $validated["rating"];
+        $skill->save();
+
+        /*$skill = new Skill();
+        $skill->title = $request->input('title');
+        $skill->rating = $request->input('rating');
+        $skill->save();
+        */
+
+        return redirect('skill')->with('success', 'Skill has been added');
     }
 
     /**

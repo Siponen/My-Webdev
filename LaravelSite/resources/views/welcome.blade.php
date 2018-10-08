@@ -22,7 +22,6 @@
             }
             
             /* Gradient transparent - color - transparent */
-
             hr {
                 border: 0;
                 height: 1px;
@@ -74,6 +73,12 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .aboutContainer {
+                margin:0 auto;
+                max-width:500px;
+            }
+
         </style>
     </head>
     <body>
@@ -90,8 +95,8 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md" style="margin-bottom:0px;">
-                    Gentlemandapper's
+                <div class="title">
+                    Conny Siponen's
                 </div>
                 <hr/>
                 <div class="title m-b-md">
@@ -99,11 +104,16 @@
                 </div>
             
                 <div class="links">
-                    <a href="#">Skills</a>
-                    <a href="">Backend projects</a>
-                    <a href="">Frontend portfolio</a>
+                    <a href="{{ url('/skills') }}">Skills</a>
+                    <a href="{{ url('/projects') }}">Projects</a>
+                    <a href="{{ url('/portfolio') }}">Frontend portfolio</a>
                     <a href="https://github.com/Siponen">GitHub</a>
                 </div>
+
+                <div class="aboutContainer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
             </div>
         </div>
     </body>

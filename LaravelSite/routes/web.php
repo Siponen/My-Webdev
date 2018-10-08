@@ -20,3 +20,4 @@ Route::get('user/{id}', function($id) {
 });
 
 Route::resource('skills', 'SkillController'); /* Remember Resource controllers and partial resource controllers are awesome for CRUD controllers and partial CRUD controllers */
+

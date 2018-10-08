@@ -11,6 +11,6 @@ class Skill extends Eloquent
     protected $collection = 'skills';
     
     protected $data = [
-        'name', 'rating'
+        'title', 'rating'
     ];
 }
