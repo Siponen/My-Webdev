@@ -3,17 +3,49 @@
     Layout = "~/Views/Shared/_IndexLayout.cshtml";
 }
 
-<div class="row">
-    <div class="col-lg-2 game-bar" style="padding:0; margin-right:0;">
-        <p class="game-bar-header">Our Games</p>
-        <div class="game-content">
-            <partial name="_Games" />
+<section class="fullScreen">
+    <div class="fullScreen-inner">
+        <div>
+            <h1>Völund Game Studio</h1>
+            <h2>New indie studio based in Stockholm, <br />Here to bring you the next generation of gameplay mechanics.</h2>
+        </div>
+
+        <div style="margin-top:50px;">
+            <h1>Our Games</h1>
+            <div class="grid-container">
+                <div class="grid-number">
+                    <a href="https://github.com/Siponen/HackSlashRPG">
+                        <img src="~/images/totimori.jpg" />
+                    </a>
+                </div>
+                <div class="grid-number">
+                    <a href="">
+                        <img src="~/images/steamworld2.jpg" />
+                    </a>
+                </div>
+                <div class="grid-number">
+                    <a href="">
+                        <img src="~/images/steamworld2.jpg" />
+                    </a>
+                </div>
+                <div class="grid-number">
+                    <a href="https://github.com/Siponen/HackSlashRPG">
+                        <img src="~/images/totimori.jpg" />
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-md-7">
-        <p class="blog-bar-header">Dev blog</p>
-        <div class="blog-content">
-            <partial name="_DevBlog" />
+</section>
+<main>
+    <div class="row">
+        <div class="col-md-7">
+            <p class="blog-bar-header">Dev Journal - <span style="font-size:15px;">The epic journey and the thoughts of an indie dev</span></p>
+            <div>
+                @await Component.InvokeAsync("PostList", new { maxPosts = 10, isDone = false })
+            </div>
+        </div>
+        <div class="col-lg-2 game-bar" style="padding:0; margin-right:0;">
         </div>
     </div>
-</div>
+</main>

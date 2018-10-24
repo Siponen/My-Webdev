@@ -14,9 +14,12 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     </environment>
 </head>
-<body>
+<body id="anotherBody">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -34,7 +37,6 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Games">Games</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="DevBlog" asp-route-page="0">Dev Blog</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="GameDesign">Game Design</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="GameConcepts">Game Concepts</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>

@@ -40,6 +40,10 @@ namespace VolundGameStudioWebsite
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=DevBlog.AspNetCore.NewDb;Trusted_Connection=True;ConnectRetryCount=0";
+            services.AddDbContext<BlogContext>(options =>
+                options.UseSqlServer(connection));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

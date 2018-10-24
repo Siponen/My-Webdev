@@ -1,0 +1,2 @@
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --port 27017 --dbpath="C:\Users\dappa\Documents\GitHub\Webdev-Stuff\LaravelSite\database\mongodb"
+"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"

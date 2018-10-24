@@ -14,7 +14,5 @@ namespace VolundGameStudioWebsite.Data
         {
 
         }
-
-        public DbSet<Post> Posts { get; set; }
     }
 }

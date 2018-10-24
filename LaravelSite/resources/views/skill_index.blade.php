@@ -3,8 +3,20 @@
     <head></head>
     <body>
         <h1>Skills:</h1>
-        <div>
-            C++, Veteran, 3 out of 5
-        </div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Skill</th>
+                <th>Rating</th>
+            </tr>
+
+            @foreach($skills as $skill)
+            <tr>
+                <td>{{$skill->id}}</td>
+                <td>{{$skill->title}}</td>
+                <td>{{$skill->rating}}</td>
+            </tr>
+            @endforeach
+        </table>
     </body>
 </html>

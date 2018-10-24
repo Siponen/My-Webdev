@@ -23,6 +23,7 @@ class StoreSkill extends FormRequest
      */
     public function rules()
     {
+        print("StoreSkill Test Rules");
         return [
             'title' => 'required|unique:skills|max:50',
             'rating' => 'required',

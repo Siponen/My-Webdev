@@ -5,6 +5,29 @@ body {
     background: rgb(226, 226, 226);
 }
 
+anotherBody {
+    background-color:white;
+}
+
+.center {
+    margin:0 auto;
+    text-align:center;
+}
+
+.team-container{
+    background-color:cornflowerblue;
+}
+
+.team-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.team-role {
+    font-family: 'Fjalla One', sans-serif;
+    font-size:18px;
+}
+
 .game-bar-header {
     color: white;
     margin-bottom: 20px;
@@ -32,6 +55,24 @@ body {
 .blog-content {
 }
 
+.post-grid {
+    background-color:white;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 100px auto;
+}
+
+.post-picture {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+.post-text {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+}
+
 .post-title {
     color: white;
     margin:0;
@@ -42,7 +83,7 @@ body {
     background: rgb(51,51,51);
 }
 
-.post-subtitle{
+.post-subtitle {
     color:white;
     background:rgb(128, 128, 128);
     padding:0 0 0 5px;
@@ -55,7 +96,19 @@ body {
 
 .post-message
 {
-    padding:10px;
+    padding:15px;
+}
+
+.post-more {
+    margin-top:20px;
+    background: rgb(51,51,51);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.post-more:hover {
+    color: white;
 }
 
 .container-content {
@@ -70,18 +123,24 @@ body {
     flex-wrap: wrap;
 }
 
-img.bg {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-    /* Set up positioning */
+#bg {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
 }
+
+    #bg img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+    }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     img.bg {
