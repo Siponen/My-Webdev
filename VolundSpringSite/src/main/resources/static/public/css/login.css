@@ -1,0 +1,108 @@
+body {
+	margin:0;
+	background-color:black;
+}
+
+.title {
+	font-size:2.5em;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.subTitle {
+	font-size:4em;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.fullScreen {
+    color:white;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('../images/tj-foo-grand-library.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fullScreen-inner {
+    color: white;
+}
+
+    .fullScreen-inner h1, h2 {
+        text-shadow: 5px 5px 10px black;
+    }
+
+.form {
+	padding: 20px 0;
+}
+	
+.form input {
+		display: block;
+		background:rgba(0,0,0,0.5);
+		min-width: 250px;
+		outline:0;
+		border-radius: 8px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		
+		color: white;
+		
+		transition-duration: 0.25s;
+		font-weight: 300;
+}
+
+.form input:hover {
+	background-color: fade(white, 40%);
+	color: black;
+}
+		
+.form input:focus {
+	background: rgba(255,255,255,0.9);
+	width: 300px;
+	color: black;
+}
+
+.form input:placeholder {
+	background:white;
+}
+
+.loginButton {
+	
+}
+
+.form button{
+	appearance: none;
+	outline: 0;
+	background-color: white;
+	border: 0;
+	padding: 10px 15px;
+	color: @prim;
+	border-radius: 3px;
+	width: 250px;
+	cursor: pointer;
+	font-size: 18px;
+	transition-duration: 0.25s;
+}
+
+.form button:hover{
+	background-color: rgb(245, 247, 249);
+}
+
+.error {
+	font-size:35px;
+	color:red;
+	margin-top:40px;
+	margin-bottom:40px;
+	text-shadow: 3px 3px 10px black;
+	outline:1px;
+}

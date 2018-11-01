@@ -1,0 +1,66 @@
+hr.cool {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+	font-family: monospace;
+	list-style: none;
+	background-color:black;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    font-size:1.3em;
+    text-decoration: none;
+  	transition-duration: 0.5s;
+}
+  
+.menu li a {
+	color: #fff;
+}
+
+.menu li:hover, li:focus-within {
+    background: darkred;
+    cursor: pointer;
+}
+
+.menu li:focus-within a {
+	outline: none;
+}
+
+ul li ul {
+	background: orange;
+    visibility: hidden;
+  	opacity: 0;
+  	min-width: 5rem;
+    position: absolute;
+  	transition: all 0.5s ease;
+  	margin-top: 1rem;
+    left: 0;
+  	display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}

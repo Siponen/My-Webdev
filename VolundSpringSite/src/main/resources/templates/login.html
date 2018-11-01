@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Volund Spring Boot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/login.css" />
+    <link rel="stylesheet" type="text/css" href="/css/menues.css" />  
+</head>
+<body>
+	<section class="fullScreen">
+	    <div class="fullScreen-inner">
+	        <div>
+	            <div class="title">Welcome to</div>
+	            <div class="subTitle">Your Backlog</div>
+	            <div><h2>It's time to beat some games</h2></div>            
+	        </div>
+	        
+	        <div class="error" th:if="${param.error}">
+            	Invalid username and password
+        	</div>
+        		        
+	        <div>
+		       	<form class="form" th:action="@{/login}" method="post">
+	            	<input type="text" placeholder="Username" name="username" autocomplete="off"/>
+	            	<input type="password" placeholder="Password" name="password"/>
+	            	<input class="loginButton" type="submit" value="Login"/>
+	    		</form>
+	        </div>
+	    </div>    
+	</section>
+</body>
+</html>
