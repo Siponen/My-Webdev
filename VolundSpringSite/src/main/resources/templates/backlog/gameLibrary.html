@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="/css/menues.css" />
+</head>
+<body>
+<div id="indexlayoutGrid">
+	<header>
+	</header>
+	
+	<div th:replace="fragments/mainMenu"></div>
+	
+	<main class="contentGrid">
+		<h1>Game library</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Genre</th>
+					<th>Year</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${games.empty}">
+					<td colspan="2"> No games available</td>
+				</tr>
+				<tr th:each="game : ${games}">
+					<td th:text="${game.gameName}"></td>
+					<td th:text="${game.genre}"></td>
+					<td th:text="${game.releaseYear}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+	
+	<div th:replace="fragments/footer"></div>
+</div>
+</body>
+</html>

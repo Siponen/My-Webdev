@@ -7,35 +7,35 @@
     <link rel="stylesheet" type="text/css" href="/css/menues.css" />
 </head>
 <body>
-<header>
-	Backlog
-</header>
-<nav>
-	<ul class="menu">
-		<li><a href="/backlog/unfinished_games">Unfinished Games</a></li>
-		<li><a href="/backlog/beaten_games">Beaten Games</a></li>
-		<li><a href="/backlog/low_priority_games">Low Priority Games</a></li>
-		<li><a href="/backlog/discontinued_games">Discontinued Games</a></li>
-		<li><a href="/backlog/index">Game Library</a></li>
-	</ul>
-</nav>
 
-<div>
-	<div class="stats">
-    	<h1>Backlog stats</h1>
-        <p>Backlog size: NumGames</p>
-        <p>Beaten games this year: NumGames</p>
-    </div>
-    <div>
-    	<h2>Latest beaten games</h2>
-    </div>
-    
-    <div>
-    	<h2>Current vote sessions</h2>
-    </div>
-</div>
-            		
-
+<section id="indexlayoutGrid">
+	<header>
+		Backlog
+	</header>
+	
+	<div th:replace="fragments/mainMenu"></div>
+	
+	<main class="contentGrid">
+		Content
+		<div>
+			<div class="stats">
+		    	<h1>Backlog stats</h1>
+		        <p>Backlog size: NumGames</p>
+		        <p>Beaten games this year: NumGames</p>
+		    </div>
+		    
+		    <div>
+		    	<h2>Latest beaten games</h2>
+		    </div>
+		    
+		    <div>
+		    	<h2>Current vote sessions</h2>
+		    </div>
+		</div>
+	</main>
+	
+	<div th:replace="fragments/footer"></div>
+</section>
 
 </body>
 </html>

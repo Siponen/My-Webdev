@@ -4,10 +4,20 @@ hr.cool {
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
+#addGameBtn {background-color:#280f04;}
+#updateGameBtn {background-color:#1c3000;}
+#removeGameBtn {background-color:#003024;}
+#unfinishedGamesBtn {background-color:#382006; }
+#beatenGamesBtn { background-color:#171c00;}
+#lowPrioGamesBtn { background-color:#051c00;}
+#discontinuedGamesBtn { background-color:#012119;}
+#gameLibraryBtn { background-color:#1e0233;}
+
 .menu {
 	font-family: monospace;
 	list-style: none;
-	background-color:black;
+	padding:0;
+	margin:0;
 }
 
 .menu a {
@@ -15,15 +25,11 @@ hr.cool {
 }
 
 .menu li {
-    color: #fff;
-    background: rgba(0,0,0,0.2);
     display: block;
-    float: left;
+    color: white;
     padding: 1rem;
-    position: relative;
     font-size:1.3em;
     text-decoration: none;
-  	transition-duration: 0.5s;
 }
   
 .menu li a {
@@ -31,8 +37,10 @@ hr.cool {
 }
 
 .menu li:hover, li:focus-within {
-    background: darkred;
+	text-decoration: underline;
+    background: darkred !important;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .menu li:focus-within a {
@@ -61,6 +69,6 @@ ul li ul:focus {
 }
 
 ul li ul li {
-    clear: both;
-  width: 100%;
+	clear: both;
+	width: 100%;
 }
