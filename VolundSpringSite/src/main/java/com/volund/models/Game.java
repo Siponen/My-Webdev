@@ -1,9 +1,11 @@
 package com.volund.models;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Game {
@@ -22,7 +24,10 @@ public class Game {
 		this.releaseYear = releaseYear;
 	};
 	
-	public Integer getId() { 
+	@OneToOne(mappedBy = "game", cascade = CascadeType.ALL)
+	private UnfinishedGame unfinishedGame;
+	
+	public Integer getId() {
 		return id; }
 	
 	public void setId(Integer gameId) {
