@@ -5,7 +5,6 @@ body {
 
 header {
 	color:white;
-	font-size:4em;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../images/tj-foo-grand-library.jpg');
     background-size: cover;
     background-position: center center;
@@ -13,7 +12,12 @@ header {
     background-attachment: fixed;
 }
 
-
+header > p {
+	font-size:4em;
+	text-align:center;
+	vertical-align:middle;
+	margin:0 auto;
+}
 
 .gameLayoutGrid {
 	display:grid;
@@ -27,7 +31,7 @@ header {
 	grid-template-rows: minmax(150px,15vh) auto 50px;
   	grid-template-columns: minmax(150px,10vw) auto;
   	
-	grid-template-areas: "head head"
+	grid-template-areas: "nav head"
 						 "nav  main"
     					 "nav  foot";
 }
@@ -35,6 +39,9 @@ header {
 #indexlayoutGrid > header {
   grid-area: head;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #indexlayoutGrid > nav {

@@ -3,16 +3,13 @@
 <head>
     <title>Volund Spring Boot</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="/css/menues.css" />
 </head>
 <body>
 
 <section id="indexlayoutGrid">
-	<header>
-		Backlog
-	</header>
-	
+	<div th:replace="fragments/header"></div>
 	<div th:replace="fragments/mainMenu"></div>
 	
 	<main class="contentGrid">
