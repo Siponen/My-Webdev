@@ -11,15 +11,19 @@
 	<div th:replace="fragments/mainMenu"></div>
 		
 	<main class="contentGrid">
-		<form action="/backlog/addGame" th:object="${gameForm}" method="post">
+		<form action="/backlog/updateGame" th:object="${gameForm}" method="post">
 			<ul>
 				<li th:each="err: ${#fields.errors('*')}" th:text="${err}"} />
 			</ul>
-			<h1>Add Game</h1>
-			<input id="gameName" type="text" th:field="*{gameName}" placeholder="Game name"  autocomplete="off"/><br/>
-			<input id="gameGenre" type="text" th:field="*{genre}" placeholder="Genre"  autocomplete="off"/><br/>
-			<input id="gameReleaseYear" type="text" th:field="*{releaseYear}"placeholder="Release year"  autocomplete="off"/><br/>
-			<input type="submit" value="Add Game"/>
+			<h1>Update Game</h1>
+			<div>
+				Id: <span th:text="*{id}" />
+			</div>
+			<input type="hidden" th:field="*{id}" th:value="*{id}"/>
+			<input id="gameName" type="text" th:field="*{gameName}" th:value="*{gameName}" placeholder="Game name" autocomplete="off"/><br/>
+			<input id="gameGenre" type="text" th:field="*{genre}" th:value="*{genre}" placeholder="Genre" autocomplete="off"/><br/>
+			<input id="gameReleaseYear" type="text" th:field="*{releaseYear}" th:value="*{releaseYear}" placeholder="Release Year" autocomplete="off"/><br/>
+			<input type="submit" value="Update Game"/>
 			<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
 		</form>
 	</main>

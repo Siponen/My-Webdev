@@ -17,6 +17,7 @@
 					<th>Name</th>
 					<th>Genre</th>
 					<th>Year</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -27,6 +28,11 @@
 					<td th:text="${game.gameName}"></td>
 					<td th:text="${game.genre}"></td>
 					<td th:text="${game.releaseYear}"></td>
+					<td>
+						<a th:href="@{/backlog/updateGame(id=${game.id})}">Change Details</a>
+						<span> | </span>
+						<a th:href="@{/backlog/removeGame(id=${game.id})}">Remove</a>
+					</td>
 				</tr>
 			</tbody>
 		</table>
