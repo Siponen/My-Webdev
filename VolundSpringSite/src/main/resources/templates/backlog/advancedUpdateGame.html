@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/menues.css" />
+	<link rel="stylesheet" type="text/css" href="/css/forms.css" />
+</head>
+<body>
+<div id="indexlayoutGrid">
+	<div th:replace="fragments/header"></div>
+	<div th:replace="fragments/mainMenu"></div>
+		
+	<main class="contentGrid">
+		<form action="/backlog/updateGame" th:object="${gameForm}" method="post">
+			<ul>
+				<li th:each="err: ${#fields.errors('*')}" th:text="${err}"} />
+			</ul>
+			<h1>Update Game</h1>
+			
+			<label>Select game: </label>
+			<input type="text" list="selectGames" placeholder="e.g. Game Name"/>
+			<datalist id="selectGames">
+				<option value="1"></option>
+				<option></option>
+			</datalist>
+			
+			<input type="hidden" th:field="*{id}" th:value="*{id}"/>
+			<input id="gameId" type="text" th:field="*{gameId}" th:value="*{gameName}" placeholder="Game name" autocomplete="off"/><br/>
+			<input type="submit" value="Update Game"/>
+			<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+		</form>
+	</main>
+	
+	<div th:replace="fragments/footer"></div>
+</div>
+</body>
+</html>
