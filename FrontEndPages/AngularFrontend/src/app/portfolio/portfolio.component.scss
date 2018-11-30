@@ -1,0 +1,54 @@
+$font-bg: #2d2d2d;
+$font-bg-purple:#47002a;
+
+#content {
+    height:100%;
+}
+
+#portfolio-grid {
+    display:grid;
+    margin-top:1px;
+    margin-bottom:1px;
+    justify-items: center; 
+    
+    @media (max-width:749px) {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    @media (max-width:550px){ grid-template-columns: repeat(2, 1fr); }
+    @media (min-width:950px) {
+        width:50%;
+        margin:0 auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media(min-width:750px) {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+.portfolio-card {
+    max-width:200px;
+    text-align:center;
+    margin-right:1px;
+    margin-left:1px;
+
+    img {
+        padding:0;
+        height:auto;
+    }
+
+    h1 {
+        background-color:$font-bg-purple;
+        margin:0;
+    }
+
+    a {
+        color:white;
+        text-decoration:none;
+    }
+
+    a:hover { text-decoration-line:underline;}
+}

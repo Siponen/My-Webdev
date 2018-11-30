@@ -1,0 +1,11 @@
+<div id="content">
+  <div class="page-title">Frontend Samples</div>
+  <div id="portfolio-grid">
+    <div class="portfolio-card" *ngFor="let portfoliocard of portfoliocards">
+      <a href={{portfoliocard.link}}>
+        <h1>{{portfoliocard.title}}</h1>
+        <img src={{portfoliocard.img}} alt=""/>
+      </a>
+    </div>
+  </div>
+</div>
